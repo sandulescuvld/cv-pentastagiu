@@ -1,101 +1,153 @@
 body {
-    margin: 5% 15%;
+    margin: 3.5% 13.8%;
+    font-family: Helvetica;
 }
 
-header {
-    text-align: center;
-    margin: 20px 0;
-}
+    header {
+        text-align: center;
+        margin: 15px 0;
+    }
 
-.aboutMeContainer {
-    border: 5px dashed black;
-    padding: 20px;
-    font-size: 20px;
-    margin: 30px 0;
-}
+        h1 {
+            font-size: 45px;
+            font-weight: 500;
+        }
 
-.aboutMe {
-    position: relative;
-    top: -40px;
-    margin-left: 50px;
-    z-index: 1;
-    padding: 10px;
-    background-color: white;
-    width: 15%;
-}
+        h4 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-top: -15px;
+        }
 
-.aboutMeDescription {
-    margin-top: -40px;
-}
+    .aboutMeContainer {
+        border: 5px dashed black;
+        padding: 20px;
+        font-size: 20px;
+        margin: 180px 0 90px 0;
+    }
 
-.workExpContainer {
-    border: 5px dashed black;
-    padding: 120px 20px;
-    font-size: 20px;
-    margin: 30px 0;
-    font-size: 20px;
-}
+        .aboutMe {
+            position: relative;
+            top: -50px;
+            margin-left: 85px;
+            z-index: 1;
+            padding: 10px;
+            background-color: white;
+            width: 14%;
+            text-align: center;
+            font-size: 30px;
+        }
 
-.workExp {
-    position: relative;
-    top: -140px;
-    margin-left: 50px;
-    z-index: 1;
-    padding: 10px;
-    background-color: white;
-    width: 26%;
-}
+        .aboutMeDescription {
+            margin: -40px 20px 10px 20px;
+            font-size: 25px;
+        }
 
-.experience {
-    display: inline-block;
-    overflow: hidden;
-    margin-top: -140px;
-}
+    .workExpContainer {
+        border: 5px dashed black;
+        padding: 170px 40px;
+        font-size: 20px;
+        margin: 30px 0;
+        font-size: 25px;
+    }
 
-.position {
-    width: 100px;
-    float:left;
-}
+        .workExp {
+            position: relative;
+            top: -190px;
+            margin-left: 65px;
+            z-index: 1;
+            padding: 1px;
+            background-color: white;
+            text-align: center;
+            width: 24%;
+            font-size: 30px;
+        }
 
-.description {
-    float: left;
-    width: 400px;
-    margin-left: 45px;
-}
+        .experience {
+            display: inline-block;
+            overflow: hidden;
+            margin-top: -160px;
+            margin-bottom: 70px;
+        }
 
-.skillsContainer {
-    border: 5px dashed black;
-    padding: 50px 20px;
-    font-size: 20px;
-    margin: 30px 0;
-    font-size: 20px;
-}
+            .position {
+                width: 485px;
+                float:left;
+                padding: 0;
+            }
 
-.skills {
-    position: relative;
-    top: -70px;
-    margin-left: 50px;
-    z-index: 1;
-    padding: 10px;
-    background-color: white;
-    width: 9%;
-}
+            .description {
+                float: left;
+                width: 470px;
+                margin-left: 45px;
+            }
 
-.skillsDes {
-    width: 200px;
-    border: 1px solid black;
-    overflow: hidden;
-}
+    .skillsContainer {
+        border: 5px dashed black;
+        font-size: 20px;
+        margin: 95px 0;
+        font-size: 25px;
+    }
 
-.skillsLogo {
-    width: 60px;
-    float:left; /* add this */
-    border: 1px solid red;
-}
+        .skills {
+            position: relative;
+            top: -30px;
+            margin-left: 105px;
+            z-index: 1;
+            padding: 10px;
+            background-color: white;
+            width: 7%;
+            text-align: center;
+            font-size: 30px;
+        }
 
-.skillsName {
-    border: 1px solid green;
-    float: left;
-    width: 40px;
-}
+        .allTheSkills {
+            display: inline-block;
+        }
 
+        .topRow {
+            display: inline-block;
+        }   
+
+            .skillsDescription {
+                width: auto;
+                margin: 0 20px 50px 40px;
+                float: left;
+            }
+
+                .skillsLogo {
+                    width: 45px;
+                    height: 45px;
+                    float:left;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                    .fas {
+                        margin-top: 15%;
+                        color: rgb(0, 0, 92);
+                        font-size: 35px;
+                    }
+
+                    .fa-child {
+                        margin-left: 20%;
+                    }
+
+                .skillsName {
+                    border: 1px solid black;
+                    float: left;
+                    width: auto;
+                    height: 45px;
+                    line-height: 45px;
+                    padding: 0 5px;
+                }
+        
+        .bottomRow {
+            display: inline-block;
+        }   
+
+            .skillsDescriptionBottom {
+                width: auto;
+                margin: 0 0 50px 40px;
+                float: left;
+            }
