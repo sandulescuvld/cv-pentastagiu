@@ -5,203 +5,214 @@ body {
     color: #26001D;
 }
 
-    header {
+
+/* Header */
+
+header {
+    text-align: center;
+    margin: 15px 0;
+}
+
+    h1 {
+        font-size: 45px;
+        font-weight: 500;
+        font-family: "Atomic Age"; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 45px; 
+    }
+
+    h4 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: -15px;
+        font-family: arial;
+    }
+
+
+/* About Me Container */
+
+.aboutMeContainer {
+    border: 5px dashed #DF2935;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 90px 0 90px 0;
+}
+
+.aboutMeContainer:hover {
+    background-color: #FFF2CE;
+}
+
+    .aboutMe {
+        position: relative;
+        top: -50px;
+        margin-left: 85px;
+        z-index: 1;
+        padding: 10px;
+        background-color: #FDCA40;
+        border-radius: 10px;
+        width: 14%;
         text-align: center;
-        margin: 15px 0;
+        font-size: 30px;
+        color: #193575;
+        font-weight: 600;
+        font-style: italic;
     }
 
-        h1 {
-            font-size: 45px;
-            font-weight: 500;
-            font-family: "Atomic Age"; 
-            font-style: normal; 
-            font-variant: normal; 
-            font-weight: 700; 
-            line-height: 45px; 
-        }
-
-        h4 {
-            font-size: 30px;
-            font-weight: 600;
-            margin-top: -15px;
-            font-family: arial;
-        }
-
-    .aboutMeContainer {
-        border: 5px dashed #DF2935;
-        border-radius: 10px;
-        padding: 20px;
-        font-size: 20px;
-        margin: 90px 0 90px 0;
-    }
-
-    .aboutMeContainer:hover {
-        background-color: #FFF2CE;
-    }
-
-        .aboutMe {
-            position: relative;
-            top: -50px;
-            margin-left: 85px;
-            z-index: 1;
-            padding: 10px;
-            background-color: #FDCA40;
-            border-radius: 10px;
-            width: 14%;
-            text-align: center;
-            font-size: 30px;
-            color: #193575;
-            font-weight: 600;
-            font-style: italic;
-        }
-
-        .aboutMeDescription {
-            margin: -40px 20px 10px 20px;
-            font-size: 25px;
-        }
-
-    .workExpContainer {
-        border: 5px dashed #DF2935;
-        border-radius: 10px;
-        padding: 170px 40px;
-        font-size: 20px;
-        margin: 30px 0;
+    .aboutMeDescription {
+        margin: -40px 20px 10px 20px;
         font-size: 25px;
     }
 
-    .workExpContainer:hover {
-        background-color: #FFF2CE;
+
+/* Work Experience Container */
+
+.workExpContainer {
+    border: 5px dashed #DF2935;
+    border-radius: 10px;
+    padding: 170px 40px;
+    font-size: 20px;
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+.workExpContainer:hover {
+    background-color: #FFF2CE;
+}
+
+    .workExp {
+        position: relative;
+        top: -200px;
+        margin-left: 65px;
+        z-index: 1;
+        padding: 10px;
+        background-color: #FDCA40;
+        border-radius: 10px;
+        text-align: center;
+        width: 25%;
+        font-size: 30px;
+        color: #193575;
+        font-weight: 600;
+        font-style: italic;
     }
 
-        .workExp {
-            position: relative;
-            top: -200px;
-            margin-left: 65px;
-            z-index: 1;
-            padding: 10px;
-            background-color: #FDCA40;
-            border-radius: 10px;
-            text-align: center;
-            width: 25%;
-            font-size: 30px;
-            color: #193575;
-            font-weight: 600;
-            font-style: italic;
+    .experience {
+        display: inline-block;
+        overflow: hidden;
+        margin-top: -160px;
+        margin-bottom: 70px;
+    }
+
+        .position {
+            width: 485px;
+            float:left;
+            padding: 0;
         }
 
-        .experience {
-            display: inline-block;
-            overflow: hidden;
-            margin-top: -160px;
-            margin-bottom: 70px;
+        .description {
+            float: left;
+            width: 470px;
+            margin-left: 45px;
         }
 
-            .position {
-                width: 485px;
+
+/* Skills container */
+
+.skillsContainer {
+    border: 5px dashed #DF2935;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 95px 0;
+    font-size: 25px;
+}
+
+.skillsContainer:hover {
+    background-color: #FFF2CE;
+}
+
+    .skills {
+        position: relative;
+        top: -30px;
+        margin-left: 105px;
+        z-index: 1;
+        padding: 10px;
+        background-color: #FDCA40;
+        border-radius: 10px;
+        width: 9%;
+        text-align: center;
+        font-size: 30px;
+        color: #193575;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .allTheSkills {
+        display: inline-block;
+    } 
+
+        .skillsDescription {
+            width: auto;
+            margin: 0 20px 50px 40px;
+            float: left;
+        }
+
+        /* Classic hover */
+        /* .skillsDescription:hover {
+            background-color: #FFD666;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        } */
+
+        /* Hover just one element and "un-emphasize" the others */
+        .skillsDescription {
+            transition: opacity 0.2s;
+        }
+        
+        .allTheSkills:hover .skillsDescription:not(:hover) {
+            opacity: 0.5;
+        }
+
+        .skillsDescription:hover {
+            background-color: #FFD666;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+            .skillsLogo {
+                width: 45px;
+                height: 47px;
                 float:left;
+                margin: 0;
                 padding: 0;
             }
 
-            .description {
-                float: left;
-                width: 470px;
-                margin-left: 45px;
-            }
-
-    .skillsContainer {
-        border: 5px dashed #DF2935;
-        border-radius: 10px;
-        font-size: 20px;
-        margin: 95px 0;
-        font-size: 25px;
-    }
-
-    .skillsContainer:hover {
-        background-color: #FFF2CE;
-    }
-
-        .skills {
-            position: relative;
-            top: -30px;
-            margin-left: 105px;
-            z-index: 1;
-            padding: 10px;
-            background-color: #FDCA40;
-            border-radius: 10px;
-            width: 9%;
-            text-align: center;
-            font-size: 30px;
-            color: #193575;
-            font-weight: 600;
-            font-style: italic;
-        }
-
-        .allTheSkills {
-            display: inline-block;
-        }
-
-        .topRow {
-            display: inline-block;
-        }   
-
-            .skillsDescription {
-                width: auto;
-                margin: 0 20px 50px 40px;
-                float: left;
-            }
-
-            .skillsDescription:hover {
-                background-color: #FFD666;
-                border-bottom-right-radius: 10px;
-                border-top-right-radius: 10px;
-            }
-
-                .skillsLogo {
-                    width: 45px;
-                    height: 47px;
-                    float:left;
-                    margin: 0;
-                    padding: 0;
+                .fas {
+                    margin-top: 15%;
+                    color: rgb(0, 0, 92);
+                    font-size: 35px;
                 }
 
-                    .fas {
-                        margin-top: 15%;
-                        color: rgb(0, 0, 92);
-                        font-size: 35px;
-                    }
-
-                    .fa-child {
-                        margin-left: 20%;
-                    }
-
-                .skillsName {
-                    border: 1px solid black;
-                    border-bottom-right-radius: 10px;
-                    border-top-right-radius: 10px;
-                    float: left;
-                    width: auto;
-                    height: 45px;
-                    line-height: 45px;
-                    padding: 0 5px;
+                .fa-child {
+                    margin-left: 20%;
                 }
-        
-        .bottomRow {
-            display: inline-block;
-        }   
 
-            .skillsDescriptionBottom {
-                width: auto;
-                margin: 0 0 50px 40px;
-                float: left;
-            }
-
-            .skillsDescriptionBottom:hover {
-                background-color: #FFD666;
+            .skillsName {
+                border: 1px solid black;
                 border-bottom-right-radius: 10px;
                 border-top-right-radius: 10px;
+                float: left;
+                width: auto;
+                height: 45px;
+                line-height: 45px;
+                padding: 0 5px;
             }
+
+
 
 /* tooltip */
+
 .tooltip {
     position: relative;
     display: inline-block;
