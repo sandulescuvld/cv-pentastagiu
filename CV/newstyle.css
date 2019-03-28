@@ -199,6 +199,7 @@ header {
         .allTheSkills:hover .skillsDescription:not(:hover) {
             opacity: 0.5;
         }
+        /* Finished the "custom" hover */
 
         .skillsDescription:hover {
             border-top-right-radius: 10px;
@@ -269,7 +270,7 @@ header {
 
     color: #fff;
     border-radius: 6px;
-    background-color: rgba(61, 40, 56, .795);
+    background-color: rgba(61, 40, 56, 0.795);
   }
   
   .tooltip .tooltiptext::after {
