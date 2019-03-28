@@ -1,283 +1,280 @@
 body {
-    font-family: arial;
+  font-family: arial;
 
-    margin: 3.5% 13.8%;
+  margin: 3.5% 13.8%;
 
-    color: #26001d;
-    background-color: #e6e8e6;
+  color: #26001d;
+  background-color: #e6e8e6;
 }
 
 
 /* Header */
 
 header {
-    margin: 15px 0;
+  margin: 15px 0;
 
-    text-align: center;
+  text-align: center;
 }
 
-    h1 {
-        font-family: 'Atomic Age';
-        font-size: 45px;
-        font-weight: 700;
-        font-style: normal;
-        font-variant: normal;
-        line-height: 45px;
-    }
+  header h1 {
+    font-family: 'Atomic Age';
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 45px;
+  }
 
-    h4 {
-        font-family: arial;
-        font-size: 30px;
-        font-weight: 600;
-    
-        margin-top: -15px;
-    }
+  header h4 {
+    font-family: arial;
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-top: -15px;
+  }
 
 
 /* About Me Container */
 
-.aboutMeContainer {
-    font-size: 20px;
+.aboutMe {
+  font-size: 20px;
 
-    margin: 90px 0 90px 0;
-    padding: 20px;
+  margin: 90px 0 90px 0;
+  padding: 20px;
 
-    border: 5px dashed #df2935;
+  border: 5px dashed #df2935;
+  border-radius: 10px;
+}
+
+.aboutMe:hover {
+  background-color: #FFF2CE;
+}
+
+  .aboutMe .title {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+
+    position: relative;
+    z-index: 1;
+    top: -50px;
+
+    width: 20vw;
+    margin-left: 85px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: #193575;
     border-radius: 10px;
-}
+    background-color: #fdca40;
+  }
 
-.aboutMeContainer:hover {
-    background-color: #FFF2CE;
-}
+  .aboutMe .description {
+    font-size: 25px;
 
-    .aboutMe {
-        font-size: 30px;
-        font-weight: 600;
-        font-style: italic;
-    
-        position: relative;
-        z-index: 1;
-        top: -50px;
-    
-        width: 20vw;
-        margin-left: 85px;
-        padding: 10px;
-    
-        text-align: center;
-    
-        color: #193575;
-        border-radius: 10px;
-        background-color: #fdca40;
-    }
-
-    .aboutMeDescription {
-        font-size: 25px;
-
-        margin: -40px 20px 10px 20px;
-    }
+    margin: -40px 0 10px 0;
+    width: 100%;
+  }
 
 
 /* Work Experience Container */
 
-.workExpContainer {
-    font-size: 20px;
-    font-size: 25px;
+.workExp {
+  font-size: 20px;
+  font-size: 25px;
 
-    margin: 30px 0;
-    padding: 9% 4%;
+  margin: 30px 0;
+  padding: 9% 4%;
 
-    border: 5px dashed #df2935;
+  border: 5px dashed #df2935;
+  border-radius: 10px;
+  position: relative;
+}
+
+.workExp:hover {
+  background-color: #FFF2CE;
+}
+
+  .workExp .title {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+
+    width: 30vw;
+    margin-left: 85px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: #193575;
     border-radius: 10px;
-    position: relative;
-}
+    background-color: #fdca40;
+  }
 
-.workExpContainer:hover {
-    background-color: #FFF2CE;
-}
+  .workExp .experience {
+    display: flex;
+  }
 
-    .workExp {
-        font-size: 30px;
-        font-weight: 600;
-        font-style: italic;
-    
-        position: absolute;
-        z-index: 1;
-        top: -30px;
-    
-        width: 30vw;
-        margin-left: 85px;
-        padding: 10px;
-    
-        text-align: center;
-    
-        color: #193575;
-        border-radius: 10px;
-        background-color: #fdca40;
-    }
+  .workExp .experience .position {
+    width: 40%;
+  }
 
-    .experience {
-        display: flex;
-    }
-
-        .position {
-            width: 40%;
-        }
-
-        .description {
-           width: 60%
-        }
+  .workExp .experience .description {
+    width: 60%
+  }
 
 
 /* Skills container */
 
-.skillsContainer {
-    font-size: 20px;
-    font-size: 25px;
+.skills {
+  font-size: 20px;
+  font-size: 25px;
 
-    margin: 95px 0;
+  margin: 95px 0;
 
-    border: 5px dashed #df2935;
+  border: 5px dashed #df2935;
+  border-radius: 10px;
+}
+
+.skills:hover {
+  background-color: #FFF2CE;
+}
+
+  .skills .title {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+
+    position: relative;
+    z-index: 1;
+    top: -30px;
+
+    width: 15vw;
+    margin-left: 105px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: #193575;
     border-radius: 10px;
-}
+    background-color: #fdca40;
+  }
 
-.skillsContainer:hover {
-    background-color: #FFF2CE;
-}
+  .skills .container {
+    display: flex;
+    flex-wrap: wrap;
+  } 
 
-    .skills {
-        font-size: 30px;
-        font-weight: 600;
-        font-style: italic;
-    
-        position: relative;
-        z-index: 1;
-        top: -30px;
-    
-        width: 15vw;
-        margin-left: 105px;
-        padding: 10px;
-    
-        text-align: center;
-    
-        color: #193575;
-        border-radius: 10px;
-        background-color: #fdca40;
+    .skills .container .description {
+      width: auto;
+      margin: 0 20px 50px 40px;
     }
 
-    .allTheSkills {
-        display: inline-block;
-    } 
+    /* Classic hover */
+    /* .skills .container .description:hover {
+      background-color: #FFD666;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    } */
 
-        .skillsDescription {
-            display: flex;
+    /* Hover just one element and "un-emphasize" the others */
+    .skills .container .description {
+      transition: opacity 0.2s;
+    }
+    
+    .allTheSkills:hover .skillsDescription:not(:hover) {
+      opacity: 0.5;
+    }
+    /* Finished the "custom" hover */
 
-            width: auto;
-            margin: 0 20px 50px 40px;
+    .skills .container .description .nameAndLogo {
+      display: flex;
+      line-height: 47px;
+    }
+
+      .skills .container .description .nameAndLogo .logo {
+        width: 45px;
+        height: 47px;
+        margin: 0;
+        padding: 0;
+      }
+
+        .skills .container .description .nameAndLogo .logo .fas {
+          font-size: 35px;
+
+          margin-top: 15%;
+      
+          color: rgb(0, 0, 92);
         }
 
-        /* Classic hover */
-        /* .skillsDescription:hover {
-            background-color: #FFD666;
-            border-bottom-right-radius: 10px;
-            border-top-right-radius: 10px;
-        } */
+        .skills .container .description .nameAndLogo .logo .fa-child {
+          margin-left: 20%;
+      }
 
-        /* Hover just one element and "un-emphasize" the others */
-        .skillsDescription {
-            transition: opacity 0.2s;
-        }
-        
-        .allTheSkills:hover .skillsDescription:not(:hover) {
-            opacity: 0.5;
-        }
-        /* Finished the "custom" hover */
+      .skills .container .description .nameAndLogo  .name {
+        line-height: 45px;
 
-        .skillsDescription:hover {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            background-color: #ffd666;
-        }
-        
-            .skillsLogo {
-                float: left;
-
-                width: 45px;
-                height: 47px;
-                margin: 0;
-                padding: 0;
-            }
-
-                .fas {
-                    font-size: 35px;
-
-                    margin-top: 15%;
-                
-                    color: rgb(0, 0, 92);
-                }
-
-                .fa-child {
-                    margin-left: 20%;
-                }
-
-            .skillsName {
-                line-height: 45px;
-
-                float: left;
-            
-                width: auto;
-                height: 45px;
-                padding: 0 5px;
-            
-                border: 1px solid black;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-            }
+        float: left;
+    
+        width: auto;
+        height: 45px;
+        padding: 0 5px;
+    
+        border: 1px solid black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
 
 
 
 /* tooltip */
 
 .tooltip {
-    position: relative;
+  position: relative;
 
-    display: inline-block;
+  display: inline-block;
   }
   
   .tooltiptext {
-    font-size: 18px;
+  font-size: 18px;
 
-    position: absolute;
-    z-index: 1;
-    bottom: 115%;
-    left: 50%;
+  position: absolute;
+  z-index: 1;
+  bottom: 115%;
+  left: 50%;
 
-    visibility: hidden;
+  visibility: hidden;
 
-    width: 200px;
-    margin-left: -60px;
-    padding: 5px;
+  width: 200px;
+  margin-left: -60px;
+  padding: 5px;
 
-    text-align: center;
+  text-align: center;
 
-    color: #fff;
-    border-radius: 6px;
-    background-color: rgba(61, 40, 56, 0.795);
+  color: #fff;
+  border-radius: 6px;
+  background-color: rgba(61, 40, 56, 0.795);
   }
   
   .tooltiptext::after {
-    position: absolute;
-    z-index: 2;
-    top: 100%;
-    left: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 50%;
 
-    margin-left: -5px;
+  margin-left: -5px;
 
-    content: '';
+  content: '';
 
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgba(61, 40, 56, .795) transparent transparent transparent;  }
-  
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(61, 40, 56, .795) transparent transparent transparent;  }
+
   .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
   }
