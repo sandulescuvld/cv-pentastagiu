@@ -4,7 +4,7 @@ body {
   margin: 3.5% 13.8%;
 
   color: #26001d;
-  background: radial-gradient(circle, #E6E8E6, #C5A7C9);
+  background: radial-gradient(circle, #E6E8E6, #A3587D);
 }
 
 
@@ -19,6 +19,7 @@ header {
 
   animation-duration: 3s;
   animation-name: slidein;
+  animation-iteration-count: 1;
 }
 
 header:hover {
@@ -56,6 +57,7 @@ header:hover {
   }
 /* text slider */
   @keyframes slidein {
+
     from {
       margin-left: 100%;
       width: 50%; 
