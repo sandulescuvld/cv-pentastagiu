@@ -1,0 +1,482 @@
+body {
+  font-family: arial;
+
+  margin: 3.5% 13.8%;
+
+  color: #26001d;
+  background: radial-gradient(circle, #E6E8E6, #C5A7C9);
+}
+
+
+/* --------------------- Header --------------------- */
+
+header {
+  position: relative;
+
+  margin: 15px 0;
+
+  text-align: center;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+header:hover {
+  animation: roll 3s;
+  opacity: .7;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  header h1 {
+    font-family: 'Atomic Age';
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 45px;
+  }
+
+  header h4 {
+    font-family: arial;
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-top: -15px;
+  }
+/* text slider */
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 50%; 
+    }
+  
+    to {
+      margin-left: 25%;
+      width: 50%;
+    }
+  }
+
+/* --------------------- About Me Container --------------------- */
+
+.aboutMe {
+  font-size: 20px;
+
+  margin: 90px 0;
+  padding: 20px;
+
+  border: 5px dashed #df2935;
+  border-radius: 10px;
+  position: relative;
+}
+
+.aboutMe:hover {
+  background-color: #FFF2CE;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+  .aboutMe::after {
+    content: "About Me";
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+
+    
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+
+    width: 20vw;
+    margin-left: 85px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: #193575;
+    border-radius: 10px;
+    background-color: #fdca40;
+  }
+  
+  /* Custom hover on After */
+  .aboutMe:hover::after {
+    background-color: #DF2935;
+    cursor: pointer;
+    transition: background-color 2s ease-out;
+    cursor: pointer;
+  }
+
+  .aboutMe .description {
+    font-size: 25px;
+
+    margin: 40px 0 30px 0;
+    width: 100%;
+  }
+
+
+/* --------------------- Work Experience Container --------------------- */
+
+.workExp {
+  font-size: 20px;
+  font-size: 25px;
+  position: relative;
+
+  margin: 30px 0;
+  padding: 9% 4%;
+
+  border: 5px dashed #df2935;
+  border-radius: 10px;
+}
+
+.workExp:hover {
+  background-color: #FFF2CE;
+  cursor: pointer;
+}
+
+  .workExp::after {
+    content: "Work Experience";
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+
+    width: 30vw;
+    margin-left: 85px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: #193575;
+    border-radius: 10px;
+    background-color: #fdca40;
+  }
+  
+  /* Custom hover on After */
+  .workExp:hover::after {
+    background-color: #27A527;
+    cursor: pointer;
+    transition: background-color 2s ease-out;
+    cursor: pointer;
+  }
+
+  .workExp .experience {
+    display: flex;
+  }
+
+  .workExp .experience .position {
+    width: 40%;
+  }
+
+  .workExp .experience .description {
+    width: 60%
+  }
+
+
+/* --------------------- Skills container --------------------- */
+
+.skills {
+  font-size: 20px;
+  font-size: 25px;
+  position: relative;
+
+  margin: 95px 0;
+
+  border: 5px dashed #df2935;
+  border-radius: 10px;
+}
+
+.skills:hover {
+  background-color: #FFF2CE;
+  cursor: pointer;
+}
+
+  .skills::after {
+    content: "Skills";
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+
+    width: 15vw;
+    margin-left: 120px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: #193575;
+    border-radius: 10px;
+    background-color: #fdca40;
+  }
+
+  /* Custom hover on After */
+  .skills:hover::after {
+    background-color: #FF3AFF;
+    cursor: pointer;
+    transition: background-color 2s ease-out;
+    cursor: pointer;
+  }
+
+  .skills .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+  } 
+
+    .skills .container .description {
+      width: auto;
+      margin: 0 20px 50px 40px;
+    }
+
+    /* By default the "custom" hover is selected, to have the "classic" hover commennt the "custom" hover and uncomment the "clasic" hover*/
+    
+    /* "Classic" hover */
+    /* .skills .container .description:hover {
+      background-color: #FFD666;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      cursor: pointer;
+    } */
+
+    /* "Custom hover" - hovers just one element and "un-emphasize" the others */
+    .skills .container .description {
+      transition: opacity 0.3s;
+    }
+    
+    .container:hover .description:not(:hover) {
+      opacity: 0.2;
+      cursor: pointer;
+    }
+    /* Finished the "custom" hover */
+
+    .skills .container .description .nameAndLogo {
+      display: flex;
+      line-height: 47px;
+    }
+
+      .skills .container .description .nameAndLogo .logo {
+        width: 45px;
+        height: 47px;
+        margin: 0;
+        padding: 0;
+      }
+
+        /* .fas are the pictograms importent with fontawesome */
+        .skills .container .description .nameAndLogo .logo .fas {
+          font-size: 35px;
+
+          margin-top: 15%;
+      
+          color: rgb(0, 0, 92);
+        }
+
+        /* .fa-child is the pictogram with the child from the Team Player Skill */
+        .skills .container .description .nameAndLogo .logo .fa-child {
+          margin-left: 20%;
+      }
+
+      .skills .container .description .nameAndLogo  .name {
+        line-height: 45px;
+
+        float: left;
+    
+        width: auto;
+        height: 45px;
+        padding: 0 5px;
+    
+        border: 1px solid black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+
+
+/* --------------------- Tooltip --------------------- */
+
+.skills .container .tooltip {
+  position: relative;
+
+  display: inline-block;
+  }
+  
+  .skills .container .tooltip .text {
+    font-size: 18px;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 115%;
+    left: 50%;
+    line-height: 20px;
+
+    visibility: hidden;
+
+    width: 200px;
+    margin-left: -60px;
+    padding: 5px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 6px;
+    background-color: rgba(61, 40, 56, 0.795);
+  }
+  
+  .skills .container .tooltip .text::after {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 50%;
+
+    margin-left: -5px;
+
+    content: '';
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(61, 40, 56, .795) transparent transparent transparent;
+  }
+
+  .skills .container .tooltip:hover .text {
+  visibility: visible;
+  cursor: pointer;
+  }
+
+@media only screen and (max-width: 567px) {
+  .aboutMe::after {
+    width: 45vw;
+    margin-left: 0px;
+  }
+
+  .workExp::after {
+    top: -45px;
+    width: 50vw;
+    margin-left: 0px;
+  }
+
+  .workExp .experience {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .workExp .experience .position {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .workExp .experience .description {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .skills::after {
+    width: 45vw;
+    margin-left: 20px;
+  }
+
+  .skills .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills .container .description .nameAndLogo {
+    display: flex;
+    line-height: 47px;
+    align-items: center;
+  }
+
+  .skills .container .description .nameAndLogo  .name {
+    height: auto;
+  }
+
+  .skills .container .tooltip .text {
+    left: 20%;
+  }
+}
+
+@media only screen and (min-width: 567px) and (max-width: 768px) {
+  .aboutMe::after {
+    width: 45vw;
+    margin-left: 0px;
+  }
+
+  .workExp::after {
+    top: -30px;
+    width: 50vw;
+    margin-left: 0px;
+  }
+
+  .workExp .experience {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .workExp .experience .position {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .workExp .experience .description {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .skills::after {
+    width: 45vw;
+    margin-left: 20px;
+  }
+
+  .skills .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .skills .container .description .nameAndLogo {
+    display: flex;
+    line-height: 47px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills .container .description .nameAndLogo  .name {
+    height: auto;
+  }
+
+  .skills .container .tooltip .text {
+    left: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .workExp {
+    padding: 8% 4% 1% 4%;
+  }
+  
+  .workExp::after {
+    top: -30px;
+    width: 35vw;
+    margin-left: 80px;
+  }
+
+  .skills::after {
+    margin-left: 100px;
+  }
+}
