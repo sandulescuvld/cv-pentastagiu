@@ -1,0 +1,400 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  margin: 0 4%;
+  background-color: #ECEBE4;
+  background: url(./images/bg_image.png) no-repeat center center fixed; 
+  background-size: cover;
+  font-family: Alagard;
+}
+
+/*  ---------------------  all p's  ---------------------  */
+p {
+  margin-left: 1%;
+}
+
+/* --------------------- all headers from CONTAINER   ---------------------  */
+header {
+  height: 130px;
+  margin: 4% 0;
+  background: url(./images/bg_title.png) no-repeat;
+  background-size: 100% 105%;
+}
+
+header p {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+/* section {
+
+} */
+
+/* .container {
+    
+} */
+
+
+/*   ---------------------    ABOUT ME   ---------------------   */
+.container .aboutMe {
+  height: 250px;
+  margin-bottom: 4%;
+  background: url(./images/bg_text.png);
+  background-size: 100% 100%;
+}
+
+
+.header p {
+  font-size: 30px;
+  padding: 4% 3% 2% 3%;
+}
+
+.header .separator img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  margin-top: -10%;
+}
+
+.container .aboutMe .details {
+  display: flex;
+  justify-content: center;
+}
+
+.container .aboutMe .details img {
+  width: 140px;
+}
+
+.container .aboutMe .details .description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.fields::before  {
+  content: url("./images/dot.png");
+  position: relative;
+  margin: 0 5%;
+}
+
+.container .aboutMe .details .description span {
+  font-size: 20px;
+}
+
+/*  ---------------------   EXPERIENCE   ---------------------   */
+.container .experience {
+  height: max-content;
+  margin-bottom: 4%;
+  background: url(./images/bg_text.png);
+  background-size: 100% 100%;
+}
+
+.container .experience .position {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 2% 1% 4%;
+  font-size: 20px;
+}
+
+.container .experience .position .workplace {
+  display: flex;
+  margin: 2% 0;
+}
+
+.container .experience .position .company {
+ display: flex;
+ flex-direction: column;
+ width: 43%;
+ margin-right: 3%;
+}
+
+.container .experience .position .function {
+  width: 57%;
+}
+
+/*   ---------------------     SKILLS   ---------------------   */
+.skills {
+  height: 580px;
+  margin-bottom: 4%;
+  background: url(./images/bg_text.png);
+  background-size: 100% 100%;
+}
+
+.skills .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1% 0 0.5% 12%;
+} 
+
+  .skills .container .description {
+    width: auto;
+    margin: 0px 0px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* By default the "custom" hover is selected, to have the "classic" hover commennt the "custom" hover and uncomment the "clasic" hover*/
+  
+  /* "Classic" hover */
+  /* .skills .container .description:hover {
+    background-color: #FFD666;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  } */
+
+  /* "Custom hover" - hovers just one element and "un-emphasize" the others */
+  .skills .container .description {
+    transition: opacity 0.3s;
+  }
+  
+  .container:hover .description:not(:hover) {
+    opacity: 0.2;
+    cursor: pointer;
+  }
+  /* Finished the "custom" hover */
+
+
+  .skills .container .description .nameAndLogo {
+    display: flex;
+    line-height: 47px;
+    margin: 1%;
+  }
+
+    .skills .container .description .nameAndLogo .logo {
+      width: 45px;
+      height: 47px;
+      margin: 0;
+      padding: 0;
+    }  
+
+    .skills .container .description .nameAndLogo  .name {
+      line-height: 45px;
+  
+      width: max-content;
+      height: 45px;
+      padding: 0 5px;
+  
+      border: 1px solid black;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+
+/*    ---------------------      FOOTER     ---------------------     */
+footer {
+  height: max-content;
+  margin-bottom: 4%;
+  background: url(./images/bg_text.png);
+  background-size: 100% 100%;
+}
+
+footer .details {
+  margin: 2% 4%;
+}
+
+footer .details span {
+  font-size: 20px;
+}
+
+
+/*    ---------------------    Tooltip     ---------------------     */
+
+.skills .container .tooltip {
+  position: relative;
+
+  }
+  
+  .skills .container .tooltip .text {
+    font-size: 18px;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 115%;
+    left: 10%;
+    line-height: 20px;
+
+    visibility: hidden;
+
+    width: 200px;
+    margin-left: -60px;
+    padding: 5px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 6px;
+    background-color: rgba(61, 40, 56, 0.795);
+  }
+  
+  .skills .container .tooltip .text::after {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 50%;
+
+    margin-left: -5px;
+
+    content: '';
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(61, 40, 56, .795) transparent transparent transparent;
+  }
+
+  .skills .container .tooltip:hover .text {
+  visibility: visible;
+  cursor: pointer;
+  }
+
+
+/*   ---------------------   TABLET VIEW   ---------------------   */
+@media only screen and (min-width: 567px) and (max-width: 992px) {
+  body {
+    margin: 0 3%;
+  }
+
+  body header p {
+    padding-top: 2%;
+  }
+
+  article {
+    display: flex;
+  }
+
+    header {
+      height: 120px;
+      margin: 3% 0;
+    }
+
+    .header p {
+      font-size: 30px;
+      padding: 3% 3% 4.5% 3%;
+    }
+    
+      .container {
+        flex-direction: column;
+        margin-right: 3%;
+      }
+      
+        .container .aboutMe {
+          margin-bottom: 3%;
+          height: 250px;
+        }
+        
+        .containe .experience {
+          height: max-content;
+          margin-bottom: 3%;
+        }
+      
+      .skills {
+        margin: 0;
+        height: auto;
+        margin: 3% 0;
+      }
+      
+        .skills p {
+          margin-left: 3%;
+        }
+
+        .skills .container {
+          flex-direction: column;
+          margin: 1% -5%;
+        }
+    
+    footer {
+      height: max-content;
+    }
+  
+    footer .header .separator {
+      width: 40%;
+      margin: -7% 0 0 30%;
+    }
+}
+
+
+/*   ---------------------     DESKTOP VIEW   ---------------------    */
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0 3%;
+  }
+
+  body header p {
+    padding-top: 2%;
+  }
+
+  article {
+    display: flex;
+  }
+
+    header {
+      height: 120px;
+      margin: 3% 0;
+    }
+
+    .header p {
+      font-size: 30px;
+      padding: 3% 3% 4.5% 3%;
+    }
+    
+      .container {
+        display: flex;
+        margin-right: 1%;
+      }
+      
+        .container .aboutMe {
+          margin: 0 1% 3% 0;
+          height: max-content;
+          padding-bottom: 3%;
+          width: 25vw;
+        }
+
+        .container .aboutMe .details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .container .experience {
+          height: max-content;
+          margin-bottom: 3%;
+          width: 50vw;
+        }
+      
+      .skills {
+        margin: 0;
+        height: auto;
+        margin: 0;
+      }
+      
+        .skills p {
+          margin-left: 3%;
+        }
+
+        .skills .container {
+          flex-direction: column;
+          margin: 1% -5%;
+        }
+    
+    footer {
+      height: max-content;
+    }
+
+    footer .header p {
+      padding: 1% 3% 5.5% 4%;
+    }
+
+    footer .header .separator {
+      width: 40%;
+      margin: -7% 0 0 30%;
+    }
+}
+
+/*    ---------------------    ALAGARD FONT    ---------------------     */
+@font-face {
+  font-family: Alagard; /*a name to be used later*/
+  src: url('./images/alagard.ttf'); /*URL to font*/
+}
